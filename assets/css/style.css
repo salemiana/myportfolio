@@ -44,8 +44,7 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  /*margin-left: 25px;*/
-}
+  }
 
 header nav ul li a {
   margin: 0 30px;
@@ -57,13 +56,10 @@ section {
   padding: 60px;
 }
 
-
-
 /*css style for hero section*/
 .hero {
   height: 600px;
-  /*width: 100%;*/
-  margin-bottom: 25px;
+    margin-bottom: 25px;
   color: #1ecf2f;
   background-image: url("../images/bg2.jpg");
   background-size: cover;
@@ -78,13 +74,7 @@ section {
   position: relative;
   text-align: center;
   margin: 0.625rem;
-  
-  color: rgb(26, 20, 7);
-  /*align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin-right: auto;*/
-
+    color: rgb(26, 20, 7);
 }
 .hero-title {
   font-size: 3rem;
@@ -97,11 +87,9 @@ section {
   width: 40%;
   height: 40%;
   border-radius: 50%;
- 
-  margin: 0;
+   margin: 0;
   max-width: 250px;
-  
-}
+  }
 
 .hero-content button {
   color: #fce138;
@@ -121,22 +109,7 @@ section {
   border: 1px solid #db7598;
 }
 
-/*p {
-  font-size: 16px;
-}
-
-/*css style for setion content
-
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-
-.float-right {
-  float: right;
-  margin-left: 25px;
-}*/
-
+/*css style for about-me section*/
 .about-me {
    text-align: center;
 }
@@ -149,16 +122,8 @@ section {
   margin: 0 auto;
 }
 
+/*css style for work section*/
 .work {
-  /*margin-bottom: 20px;
-  padding: 50px;
-  height: 900px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #0072bb;
-  color: hsl(0, 0%, 100%);
-  flex-flow: column wrap;
-  text-shadow: #0b0d0e;*/
-  
   background: white;
   background-size: cover;
   width: 900px;
@@ -176,6 +141,11 @@ section {
   font-size: 30px;
   display: grid;
   grid-auto-flow: dense;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  
 }
 
 .work > div:hover {
@@ -187,18 +157,11 @@ section {
   text-align: center;
 }
 
+/*css style for work-div-contents section*/
 .surf-report {
   background-image: url("../images/bg6.jpg");
-  /*margin-bottom: 20px;
-  font-size: 20px;
-  width: 100%;
-  height: 20vh;
-  width: 900px;
-  margin: 0 auto 30px auto;
-  /*background: #024e76;
-  color: #36300b;
-  overflow: auto;*/
-  padding: 1rem;
+    padding: 1rem;
+    flex-direction: row;
 }
 
 .led-wall {
@@ -221,13 +184,18 @@ section {
   padding: 1rem;
 }
 
-/*
-.content {
-  width: 75%;
-  display: inline-block;
-  margin-left: 20px;
-}*/
+/*css style for contact section*/
+.contact{
+  display: inline;
+  font-weight: bolder;
+  }
 
+   a:hover{
+    color: red;
+    border: 1px solid #db7598;
+  }
+
+/*css style for footer section*/
 footer {
   padding: 30px;
   clear: both;
