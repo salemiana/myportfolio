@@ -5,14 +5,14 @@
 }
 
 body {
-  background-color: #1ecf2f;
+  background-color: hsl(120, 6%, 76%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*css style for header navigation*/
 
 header {
   padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #2a607c;
   color: chartreuse;
 }
@@ -24,12 +24,14 @@ header h1 {
   color: rgb(51, 0, 255);
 }
 
+header a {
+  color: #e58a8a;
+  text-decoration: none;
+}
+
 header nav {
-  padding-top: 15px;
-  margin-right: 20px;
   float: right;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  margin: 7px 0;
 }
 
 nav ul li a:hover {
@@ -42,49 +44,88 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  margin-left: 25px;
+  /*margin-left: 25px;*/
 }
 
-a {
-  color: #e58a8a;
-  text-decoration: none;
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
 }
+
+section {
+  padding: 60px;
+}
+
+
 
 /*css style for hero section*/
 .hero {
-  height: 800px;
-  width: 100%;
+  height: 600px;
+  /*width: 100%;*/
   margin-bottom: 25px;
   color: #1ecf2f;
-  background-image: url("../images/bg6.jpg");
+  background-image: url("../images/bg2.jpg");
   background-size: cover;
   background-position: center;
-  
+  position: relative;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero h1{
-  float: right;
-  height: 50vh;
-  display: flex;
-  color: chartreuse;
-  align-items: center;
+.hero-content {
+  position: relative;
+  text-align: center;
+  margin: 0.625rem;
+  
+  color: rgb(26, 20, 7);
+  /*align-items: center;
   justify-content: center;
   align-content: center;
-  
+  margin-right: auto;*/
+
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .hero img {
   float: left;
-  width: 250px;
-  height: 250px;
+  width: 40%;
+  height: 40%;
   border-radius: 50%;
+ 
+  margin: 0;
+  max-width: 250px;
+  
 }
 
-p {
+.hero-content button {
+  color: #fce138;
+  background-color: #02080b;
+  border: 1px solid #cb376a;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+  
+}
+
+.hero-content button:hover {
+  color: red;
+  border: 1px solid #db7598;
+}
+
+/*p {
   font-size: 16px;
 }
 
-/*css style for setion content*/
+/*css style for setion content
 
 .float-left {
   float: left;
@@ -94,122 +135,98 @@ p {
 .float-right {
   float: right;
   margin-left: 25px;
+}*/
+
+.about-me {
+   text-align: center;
 }
 
+.about-me p {
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.work {
+  /*margin-bottom: 20px;
+  padding: 50px;
+  height: 900px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: hsl(0, 0%, 100%);
+  flex-flow: column wrap;
+  text-shadow: #0b0d0e;*/
+  
+  background: white;
+  background-size: cover;
+  width: 900px;
+  margin: 0 auto 30px auto;
+  color: #36300b;
+  overflow: auto;
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+.work > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  display: grid;
+  grid-auto-flow: dense;
+}
+
+.work > div:hover {
+  color: red;
+  border: 1px solid #db7598;
+}
+
+.work h2 {
+  text-align: center;
+}
+
+.surf-report {
+  background-image: url("../images/bg6.jpg");
+  /*margin-bottom: 20px;
+  font-size: 20px;
+  width: 100%;
+  height: 20vh;
+  width: 900px;
+  margin: 0 auto 30px auto;
+  /*background: #024e76;
+  color: #36300b;
+  overflow: auto;*/
+  padding: 1rem;
+}
+
+.led-wall {
+  background-image: url("../images/bg1.jpg");
+  padding: 1rem;
+}
+
+.calculator {
+  background-image: url("../images/bg3.jpg");
+  padding: 1rem;
+}
+
+.pastel-puzzles {
+  background-image: url("../images/bg7.jpg");
+  padding: 1rem;
+}
+
+.run-buddy {
+  background-image: url("../images/runbuddy.jpg");
+  padding: 1rem;
+}
+
+/*
 .content {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
-}
-
-/*css style for the aside html attribute of the benefit class */
-aside {    
-  float: right;
-}  
-
-.benefits {
-  margin-right: 20px;
-  padding: 20px;
-  clear: both;
-  float: right;
-  width: 20%;
-  height: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #2589bd;
-}
-
-.benefit {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.benefit h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-
-/*.search-engine-optimization + online-reputation-management + social-media-marketing */ 
-.about-me{
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 200px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-  }
-
-  .work{
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 900px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: hsl(0, 0%, 100%);
-    flex-flow: column wrap;
-    
-    }
-
-    .work h2{
-      text-align: left;
-    }
-
-    .surf-report {
-      background-image: url("../images/bg2.jpg");
-      margin-bottom: 20px;
-      font-size: 20px;
-      width: 100%;
-      height: 20vh;
-      }
-    
-    .led-wall {
-      background-image: url("../images/bg1.jpg");
-      margin-bottom: 20px;
-      font-size: 20px;
-      width: 100%;
-      height: 20vh;
-    }
-    
-    .calculator {
-       background-image: url("../images/bg3.jpg");
-       margin-bottom: 20px;
-       font-size: 20px;
-       width: 100%;
-      height: 20vh;
-      }
-    
-    .pastel-puzzles {
-        background-image: url("../images/bg7.jpg");
-        margin-bottom: 20px;
-        font-size: 20px;
-        width: 100%;
-      height: 20vh;
-      }
-    
-    .run-buddy {
-        background-image: url("../images/runbuddy.jpg");
-        margin-bottom: 20px;
-        font-size: 20px;
-        width: 100%;
-      height: 20vh;
-      }
-
-    }
-.search-online-social img {
-  max-height: 200px;
-}
-
-
-.search-online-social h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
+}*/
 
 footer {
   padding: 30px;
