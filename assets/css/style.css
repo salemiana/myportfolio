@@ -1,144 +1,225 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    /* more on this crazy alphanumerical value in a minute! */
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
-  }
+  background-color: #1ecf2f;
+}
 
-  /* apply styles to <header> */
-  header {
-    padding: 20px 35px;
-    background-color: #39a6b2;
-    text-decoration: none;
-    color: black;
-   
-    /*background-position: bottom;*/
-    background-size: 500px;
-    
-  }
+/*css style for header navigation*/
 
-  header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #38fcbe;
-    margin: 0;
-    display: inline;
-  }
+header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #2a607c;
+  color: chartreuse;
+}
+
+header h1 {
+  display: inline;
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(51, 0, 255);
+}
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+a {
+  color: #e58a8a;
+  text-decoration: none;
+}
+
+/*css style for hero section*/
+.hero {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  color: #1ecf2f;
+  background-image: url("../images/bg6.jpg");
+  background-size: cover;
+  background-position: center;
   
-  header a {
-     text-decoration: none;
-    color: darkgoldenrod;
-  }
-
-   header nav {
-    float: right;
-    margin: 7px 0;
-  }
-
-  header nav ul li {
-    display: inline;
-  }
-
-  header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
-  }
-
-  nav ul li a:hover{
-    color: red;
 }
 
-.hero{
-    height: 50vh;  
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-size: cover;
-    background-image: url("../images/bg7.jpg");
-}
-
-.work{
-  text-align: left;
-}
-
-.labs{
+.hero h1{
+  float: right;
+  height: 50vh;
   display: flex;
-  /*justify-content: space-between;*/
-  flex-wrap: wrap;
-}
-.surf-report{
-    width: 80%;
-    height: 20%;
-    margin: 10px;
-    background-image: url("../images/bg1.jpg");
-    overflow: auto;
-    text-align: right;
-    display:flex;
-    flex-direction: column;
-    float: right;
-}
-.led-wall{
-  width: 80%;
-  margin: 10px;
-  background-image: url("../images/bg2.jpg");
-  overflow: auto;
-  text-align: right;
-  display:flex;
-  flex-direction: column;
-  float: right;
-}
-
-.calculator{
-    width: 80%;
-    margin: 10px;
-    background-image: url("../images/bg4.jpg");
-    overflow: auto;
-    text-align: right;
-    display:flex;
-    flex-direction: column;
-    float: right;
-}
-
-.pastel-puzzles{
-    width: 80%;
-    margin: 10px;
-    background-image: url("../images/bg1.jpg");
-    overflow: auto;
-    text-align: right;
-    display:flex;
-    flex-direction: column;
-    float: right;
-}
-
-.run-buddy{
-  width: 80%;
-  margin: 10px;
-  background-image: url("../images/bg1.jpg");
-  overflow: auto;
-  text-align: right;
-  display:flex;
-  flex-direction: column;
-  float: right;
-}
-
-/*.contact{
-  justify-content: space-between;
-}*/
-
-.content ul li a{
-  justify-content: space-between;
-}
+  color: chartreuse;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   
-  /*section {
-    padding: 60px;
-    text-align: right;
-    position: relative;
-  }*/
+}
 
+.hero img {
+  float: left;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+p {
+  font-size: 16px;
+}
+
+/*css style for setion content*/
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*css style for the aside html attribute of the benefit class */
+aside {    
+  float: right;
+}  
+
+.benefits {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #2589bd;
+}
+
+.benefit {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.benefit h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.benefit img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+
+
+/*.search-engine-optimization + online-reputation-management + social-media-marketing */ 
+.about-me{
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+  }
+
+  .work{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 900px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: hsl(0, 0%, 100%);
+    flex-flow: column wrap;
+    
+    }
+
+    .work h2{
+      text-align: left;
+    }
+
+    .surf-report {
+      background-image: url("../images/bg2.jpg");
+      margin-bottom: 20px;
+      font-size: 20px;
+      width: 100%;
+      height: 20vh;
+      }
+    
+    .led-wall {
+      background-image: url("../images/bg1.jpg");
+      margin-bottom: 20px;
+      font-size: 20px;
+      width: 100%;
+      height: 20vh;
+    }
+    
+    .calculator {
+       background-image: url("../images/bg3.jpg");
+       margin-bottom: 20px;
+       font-size: 20px;
+       width: 100%;
+      height: 20vh;
+      }
+    
+    .pastel-puzzles {
+        background-image: url("../images/bg7.jpg");
+        margin-bottom: 20px;
+        font-size: 20px;
+        width: 100%;
+      height: 20vh;
+      }
+    
+    .run-buddy {
+        background-image: url("../images/runbuddy.jpg");
+        margin-bottom: 20px;
+        font-size: 20px;
+        width: 100%;
+      height: 20vh;
+      }
+
+    }
+.search-online-social img {
+  max-height: 200px;
+}
+
+
+.search-online-social h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 20px;
+  display: inline;
+  text-align: center;
+}
