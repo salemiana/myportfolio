@@ -44,7 +44,7 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  }
+}
 
 header nav ul li a {
   margin: 0 30px;
@@ -59,13 +59,13 @@ section {
 /*css style for hero section*/
 .hero {
   height: 600px;
-    margin-bottom: 25px;
+  margin-bottom: 25px;
   color: #1ecf2f;
   background-image: url("../images/bg2.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -74,8 +74,9 @@ section {
   position: relative;
   text-align: center;
   margin: 0.625rem;
-    color: rgb(26, 20, 7);
+  color: rgb(26, 20, 7);
 }
+
 .hero-title {
   font-size: 3rem;
   font-weight: 600;
@@ -87,21 +88,21 @@ section {
   width: 40%;
   height: 40%;
   border-radius: 50%;
-   margin: 0;
+  margin: 0;
   max-width: 250px;
-  }
+}
 
 .hero-content button {
   color: #fce138;
   background-color: #02080b;
   border: 1px solid #cb376a;
-    margin-top: 5rem;
-    padding: 0.9375rem 1.875rem;
-    font-family: "Monserrat", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 200;
-    cursor: pointer;
-  
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+
 }
 
 .hero-content button:hover {
@@ -111,7 +112,7 @@ section {
 
 /*css style for about-me section*/
 .about-me {
-   text-align: center;
+  text-align: center;
 }
 
 .about-me p {
@@ -125,30 +126,25 @@ section {
 /*css style for work section*/
 .work {
   background: white;
-  background-size: cover;
-  width: 900px;
+  /*background-size: cover;*/
   margin: 0 auto 30px auto;
   color: #36300b;
-  overflow: auto;
-  display: flex;
-  flex-flow: row wrap;
   
+
 }
-.work > div {
-  background-color: #f1f1f1;
-  margin: 10px;
+
+.work>div {
+    margin: 10px;
   padding: 20px;
   font-size: 30px;
-  display: grid;
-  grid-auto-flow: dense;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  
+  flex-flow: row wrap;
 }
 
-.work > div:hover {
+.work>div:hover {
   color: red;
   border: 1px solid #db7598;
 }
@@ -160,8 +156,8 @@ section {
 /*css style for work-div-contents section*/
 .surf-report {
   background-image: url("../images/bg6.jpg");
-    padding: 1rem;
-    flex-direction: row;
+  padding: 1rem;
+  flex-direction: row;
 }
 
 .led-wall {
@@ -185,15 +181,15 @@ section {
 }
 
 /*css style for contact section*/
-.contact{
+.contact {
   display: inline;
   font-weight: bolder;
-  }
+}
 
-   a:hover{
-    color: red;
-    border: 1px solid #db7598;
-  }
+a:hover {
+  color: red;
+  border: 1px solid #db7598;
+}
 
 /*css style for footer section*/
 footer {
