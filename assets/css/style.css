@@ -68,6 +68,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: auto;
 }
 
 .hero-content {
@@ -126,7 +127,6 @@ section {
 /*css style for work section*/
 .work {
   background: white;
-  /*background-size: cover;*/
   margin: 0 auto 30px auto;
   color: #e907c3;
   
@@ -158,11 +158,13 @@ section {
   background-image: url("../images/bg6.jpg");
   padding: 1rem;
   flex-direction: row;
+  background-size: cover;
 }
 
 .led-wall {
   background-image: url("../images/bg1.jpg");
   padding: 1rem;
+  
 }
 
 .calculator {
@@ -183,6 +185,8 @@ section {
 .musitory {
   background-image: url("../images/musitory.png");
   padding: 1rem;
+  background-size: cover;
+  object-fit: cover;
 }
 
 
