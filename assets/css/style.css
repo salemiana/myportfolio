@@ -128,7 +128,7 @@ section {
   background: white;
   /*background-size: cover;*/
   margin: 0 auto 30px auto;
-  color: #36300b;
+  color: #e907c3;
   
 
 }
@@ -179,6 +179,12 @@ section {
   background-image: url("../images/runbuddy.jpg");
   padding: 1rem;
 }
+
+.musitory {
+  background-image: url("../images/musitory.png");
+  padding: 1rem;
+}
+
 
 /*css style for contact section*/
 .contact {
