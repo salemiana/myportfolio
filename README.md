@@ -1,11 +1,13 @@
 # myportfolio
 
 ## Purpose
-A portfolio thatshows skills and talents to employers looking to fill a part-time or full-time position..
+A portfolio that shows skills and talents to employers looking to fill a part-time or full-time position..
 
 ## Built with
 * HTML
 * CSS
+* API
+* BULMA
 
 ## Website
 https://salemiana.github.io/myportfolio/
@@ -15,4 +17,5 @@ Made with ❤️ by Salem
 
 ### ©2022 Personal Portfolio
 
-![screencapture-file-C-Users-salem-Desktop-projects-myportfolio-index-html-2022-04-03-21_02_39](https://user-images.githubusercontent.com/101297588/161462572-2f359276-15be-4d66-b1fc-198c426460eb.png)
+
+![portfolio](https://user-images.githubusercontent.com/101297588/167297999-791fd453-aa0b-4dbf-8ed8-fae7a2e0be77.png)
