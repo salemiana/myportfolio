@@ -188,6 +188,12 @@ section {
   background-size: cover;
   object-fit: cover;
 }
+.fitness-connect {
+  background-image: url("../images/homepage_img.jpg");
+  padding: 1rem;
+  background-size: cover;
+  object-fit: cover;
+}
 
 
 /*css style for contact section*/
@@ -214,3 +220,4 @@ footer h2 {
   display: inline;
   text-align: center;
 }
+
